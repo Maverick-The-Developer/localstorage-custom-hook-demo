@@ -1,7 +1,7 @@
 import { useLocalStorage } from '../hooks/localStorage'
 
 export default function Fonts() {
-  const [fontSize, setFontSize] = useLocalStorage('fontSize', 16)
+  const [fontSize, setFontSize] = useLocalStorage<number>('fontSize', 16)
 
   return (
     <div>

@@ -2,7 +2,7 @@ import { useLocalStorage } from '../hooks/localStorage'
 
 export default function Colors() {
 
-  const [ color, setColor ] = useLocalStorage('color', '#ff0000')
+  const [ color, setColor ] = useLocalStorage<string>('color', '#ff0000')
 
   return (
     <div className='w-[340px] flex flex-col gap-4'>
